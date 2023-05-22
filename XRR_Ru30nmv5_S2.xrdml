@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xrdMeasurements xmlns="http://www.xrdml.com/XRDMeasurement/1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xrdml.com/XRDMeasurement/1.6 http://www.xrdml.com/XRDMeasurement/1.6/XRDMeasurement.xsd" status="Completed">
+	<comment>
+		<entry>Configuration=Stage 5 Axes_singledetonly, Owner=User-1, Creation date=11/4/2016 10:41:20 AM</entry>
+		<entry>Goniometer=Theta/Theta; Minimum step size 2Theta:0.0001; Minimum step size Omega:0.0001</entry>
+		<entry>Sample stage=Chi-Phi-x-y-z stage 240 mm; Minimum step size Phi:0.01; Minimum step size Chi:0.01; Minimum step size X:0.01; Minimum step size Y:0.01; Minimum step size Z:0.001</entry>
+		<entry>Diffractometer system=EMPYREAN</entry>
+		<entry>Measurement program=C:\PANalytical\Data Collector\Programs\Niek\XRR_Step_2_K.xrdmp, Identifier={B4A99F84-DF2C-4D8C-B17C-4E53AD7FBE7E}</entry>
+		<entry>Fine Calibration Offset for 2Theta = 0.0046 deg</entry>
+		<entry>Fine Calibration Offset for Omega = 0.0032 deg</entry>
+		<entry>Batch program=C:\PANalytical\Data Collector\Programs\Niek\XRR.xrdmp, Identifier={14B80190-3C8D-4A55-A673-5A3DC1E2EC15}</entry>
+	</comment>
+	<sample type="To be analyzed">
+		<id>AC20220224_#2_R4_R30nm</id>
+		<name>User</name>
+		<preparedBy>User-1</preparedBy>
+	</sample>
+	<xrdMeasurement measurementType="Scan" status="Completed" sampleMode="Reflection">
+		<comment>
+			<entry>PHD Lower Level = 5.63 (keV), PHD Upper Level = 12.88 (keV)</entry>
+		</comment>
+		<usedWavelength intended="K-Alpha 1">
+			<kAlpha1 unit="Angstrom">1.5405980</kAlpha1>
+			<kAlpha2 unit="Angstrom">1.5444260</kAlpha2>
+			<kBeta unit="Angstrom">1.3922500</kBeta>
+			<ratioKAlpha2KAlpha1>0.5000</ratioKAlpha2KAlpha1>
+		</usedWavelength>
+		<incidentBeamPath>
+			<radius unit="mm">240.00</radius>
+			<xRayTube id="1010048" name="Empyrean Cu LFF HR (9430 033 7310x) DK425523">
+				<tension unit="kV">45.0</tension>
+				<current unit="mA">40.0</current>
+				<anodeMaterial>Cu</anodeMaterial>
+				<focus type="Line">
+					<length unit="mm">12.0</length>
+					<width unit="mm">0.4</width>
+					<takeOffAngle unit="deg">2.2</takeOffAngle>
+				</focus>
+			</xRayTube>
+			<xRayMirror id="27080001" name="Inc. Beam Cu W/Si (hybrid MPD)" hybrid="true">
+				<crystal type="Graded" shape="Parabolic">W/Si</crystal>
+				<acceptanceAngle unit="deg">0.800</acceptanceAngle>
+				<length unit="mm">55.3</length>
+			</xRayMirror>
+			<monochromator id="23090002" name="Hybrid monochr. 2xGe(220) for Cu" hybrid="true">
+				<crystal type="Asymmetric" shape="Flat">Ge</crystal>
+				<numberOfReflections>2</numberOfReflections>
+				<hkl>
+					<h>2</h>
+					<k>2</k>
+					<l>0</l>
+				</hkl>
+			</monochromator>
+			<divergenceSlit id="22010011" name="Fixed slit 1/32°" xsi:type="fixedDivergenceSlitType">
+				<distanceToSample unit="mm">140.00</distanceToSample>
+				<height unit="mm">0.05</height>
+			</divergenceSlit>
+		</incidentBeamPath>
+		<sampleOffset>
+			<position axis="2Theta" unit="deg">0.0000</position>
+			<position axis="Omega" unit="deg">0.0000</position>
+		</sampleOffset>
+		<diffractedBeamPath>
+			<radius unit="mm">240.00</radius>
+			<antiScatterSlit id="22010009" name="Fixed slit 1/16°" xsi:type="fixedAntiScatterSlitType">
+				<height unit="mm">0.10</height>
+			</antiScatterSlit>
+			<beamAttenuator id="26010001" name="Progr. beam attenuator Ni 0.125 mm" xsi:type="intensitySwitchedBeamAttenuatorType">
+				<factor>165.00</factor>
+				<material>Ni</material>
+				<activateLevel unit="counts per second">300000</activateLevel>
+				<deactivateLevel unit="counts per second">200000</deactivateLevel>
+			</beamAttenuator>
+			<receivingSlit id="22010009" name="Fixed slit 1/16°">
+				<height unit="mm">0.10</height>
+			</receivingSlit>
+			<detector id="7010011" name="Proportional detector Xe" xsi:type="pointDetectorType">
+				<phd>
+					<lowerLevel unit="%">35.0</lowerLevel>
+					<upperLevel unit="%">80.0</upperLevel>
+				</phd>
+			</detector>
+		</diffractedBeamPath>
+		<scan appendNumber="0" mode="Continuous" scanAxis="Omega-2Theta" status="Completed">
+			<header>
+				<startTimeStamp>2023-02-17T11:42:02+01:00</startTimeStamp>
+				<endTimeStamp>2023-02-17T12:02:28+01:00</endTimeStamp>
+				<author>
+					<name>user-1</name>
+				</author>
+				<source>
+					<applicationSoftware version="5.3">Data Collector</applicationSoftware>
+					<instrumentControlSoftware version="7.8b 20160531">EMPYREAN</instrumentControlSoftware>
+					<instrumentID>0000000011186721</instrumentID>
+				</source>
+			</header>
+			<dataPoints>
+				<positions axis="2Theta" unit="deg">
+					<startPosition>3.6100</startPosition>
+					<endPosition>5.9900</endPosition>
+				</positions>
+				<positions axis="Omega" unit="deg">
+					<startPosition>1.8050</startPosition>
+					<endPosition>2.9950</endPosition>
+				</positions>
+				<positions axis="Phi" unit="deg">
+					<commonPosition>0.00</commonPosition>
+				</positions>
+				<positions axis="Chi" unit="deg">
+					<commonPosition>-0.28</commonPosition>
+				</positions>
+				<positions axis="X" unit="mm">
+					<commonPosition>0.00</commonPosition>
+				</positions>
+				<positions axis="Y" unit="mm">
+					<commonPosition>0.00</commonPosition>
+				</positions>
+				<positions axis="Z" unit="mm">
+					<commonPosition>9.420</commonPosition>
+				</positions>
+				<beamAttenuationFactors>1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00</beamAttenuationFactors>
+				<commonCountingTime unit="seconds">10.00</commonCountingTime>
+				<intensities unit="counts">14582 15284 14458 12628 10034 6707 3925 1635 311 347 1427 3496 5883 8052 10346 11368 11437 10412 8506 6415 4025 1921 591 175 653 1775 3521 5457 7201 8055 8424 8052 6959 5342 3653 1973 819 177 249 915 1982 3291 4508 5461 5989 6025 5359 4317 2891 1824 898 244 126 392 1092 1896 2899 3597 3889 4148 3755 3187 2366 1499 829 271 82 175 541 1051 1666 2138 2525 2618 2457 2213 1698 1226 586 266 48 49 217 528 878 1252 1471 1586 1584 1435 1115 857 483 218 64 22 88 256 437 676 811 938 894 900 724 548 315 187 70 13 32 102 181 315 391 505 468 450 356 285</intensities>
+			</dataPoints>
+		</scan>
+	</xrdMeasurement>
+</xrdMeasurements>
