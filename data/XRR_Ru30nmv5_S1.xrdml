@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xrdMeasurements xmlns="http://www.xrdml.com/XRDMeasurement/1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xrdml.com/XRDMeasurement/1.6 http://www.xrdml.com/XRDMeasurement/1.6/XRDMeasurement.xsd" status="Completed">
+	<comment>
+		<entry>Configuration=Stage 5 Axes_singledetonly, Owner=User-1, Creation date=11/4/2016 10:41:20 AM</entry>
+		<entry>Goniometer=Theta/Theta; Minimum step size 2Theta:0.0001; Minimum step size Omega:0.0001</entry>
+		<entry>Sample stage=Chi-Phi-x-y-z stage 240 mm; Minimum step size Phi:0.01; Minimum step size Chi:0.01; Minimum step size X:0.01; Minimum step size Y:0.01; Minimum step size Z:0.001</entry>
+		<entry>Diffractometer system=EMPYREAN</entry>
+		<entry>Measurement program=C:\PANalytical\Data Collector\Programs\Niek\XRR_Step_1_K.xrdmp, Identifier={926ACE8E-1077-4FAF-B2F7-9D7600FAB0B4}</entry>
+		<entry>Fine Calibration Offset for 2Theta = 0.0046 deg</entry>
+		<entry>Fine Calibration Offset for Omega = 0.0032 deg</entry>
+		<entry>Batch program=C:\PANalytical\Data Collector\Programs\Niek\XRR.xrdmp, Identifier={14B80190-3C8D-4A55-A673-5A3DC1E2EC15}</entry>
+	</comment>
+	<sample type="To be analyzed">
+		<id>AC20220224_#2_R4_R30nm</id>
+		<name>User</name>
+		<preparedBy>User-1</preparedBy>
+	</sample>
+	<xrdMeasurement measurementType="Scan" status="Completed" sampleMode="Reflection">
+		<comment>
+			<entry>PHD Lower Level = 5.63 (keV), PHD Upper Level = 12.88 (keV)</entry>
+		</comment>
+		<usedWavelength intended="K-Alpha 1">
+			<kAlpha1 unit="Angstrom">1.5405980</kAlpha1>
+			<kAlpha2 unit="Angstrom">1.5444260</kAlpha2>
+			<kBeta unit="Angstrom">1.3922500</kBeta>
+			<ratioKAlpha2KAlpha1>0.5000</ratioKAlpha2KAlpha1>
+		</usedWavelength>
+		<incidentBeamPath>
+			<radius unit="mm">240.00</radius>
+			<xRayTube id="1010048" name="Empyrean Cu LFF HR (9430 033 7310x) DK425523">
+				<tension unit="kV">45.0</tension>
+				<current unit="mA">40.0</current>
+				<anodeMaterial>Cu</anodeMaterial>
+				<focus type="Line">
+					<length unit="mm">12.0</length>
+					<width unit="mm">0.4</width>
+					<takeOffAngle unit="deg">2.2</takeOffAngle>
+				</focus>
+			</xRayTube>
+			<xRayMirror id="27080001" name="Inc. Beam Cu W/Si (hybrid MPD)" hybrid="true">
+				<crystal type="Graded" shape="Parabolic">W/Si</crystal>
+				<acceptanceAngle unit="deg">0.800</acceptanceAngle>
+				<length unit="mm">55.3</length>
+			</xRayMirror>
+			<monochromator id="23090002" name="Hybrid monochr. 2xGe(220) for Cu" hybrid="true">
+				<crystal type="Asymmetric" shape="Flat">Ge</crystal>
+				<numberOfReflections>2</numberOfReflections>
+				<hkl>
+					<h>2</h>
+					<k>2</k>
+					<l>0</l>
+				</hkl>
+			</monochromator>
+			<divergenceSlit id="22010011" name="Fixed slit 1/32°" xsi:type="fixedDivergenceSlitType">
+				<distanceToSample unit="mm">140.00</distanceToSample>
+				<height unit="mm">0.05</height>
+			</divergenceSlit>
+		</incidentBeamPath>
+		<sampleOffset>
+			<position axis="2Theta" unit="deg">0.0000</position>
+			<position axis="Omega" unit="deg">0.0000</position>
+		</sampleOffset>
+		<diffractedBeamPath>
+			<radius unit="mm">240.00</radius>
+			<antiScatterSlit id="22010009" name="Fixed slit 1/16°" xsi:type="fixedAntiScatterSlitType">
+				<height unit="mm">0.10</height>
+			</antiScatterSlit>
+			<beamAttenuator id="26010001" name="Progr. beam attenuator Ni 0.125 mm" xsi:type="intensitySwitchedBeamAttenuatorType">
+				<factor>165.00</factor>
+				<material>Ni</material>
+				<activateLevel unit="counts per second">300000</activateLevel>
+				<deactivateLevel unit="counts per second">200000</deactivateLevel>
+			</beamAttenuator>
+			<receivingSlit id="22010009" name="Fixed slit 1/16°">
+				<height unit="mm">0.10</height>
+			</receivingSlit>
+			<detector id="7010011" name="Proportional detector Xe" xsi:type="pointDetectorType">
+				<phd>
+					<lowerLevel unit="%">35.0</lowerLevel>
+					<upperLevel unit="%">80.0</upperLevel>
+				</phd>
+			</detector>
+		</diffractedBeamPath>
+		<scan appendNumber="0" mode="Continuous" scanAxis="Omega-2Theta" status="Completed">
+			<header>
+				<startTimeStamp>2023-02-17T11:30:20+01:00</startTimeStamp>
+				<endTimeStamp>2023-02-17T11:41:50+01:00</endTimeStamp>
+				<author>
+					<name>user-1</name>
+				</author>
+				<source>
+					<applicationSoftware version="5.3">Data Collector</applicationSoftware>
+					<instrumentControlSoftware version="7.8b 20160531">EMPYREAN</instrumentControlSoftware>
+					<instrumentID>0000000011186721</instrumentID>
+				</source>
+			</header>
+			<dataPoints>
+				<positions axis="2Theta" unit="deg">
+					<startPosition>0.2050</startPosition>
+					<endPosition>3.5950</endPosition>
+				</positions>
+				<positions axis="Omega" unit="deg">
+					<startPosition>0.1025</startPosition>
+					<endPosition>1.7975</endPosition>
+				</positions>
+				<positions axis="Phi" unit="deg">
+					<commonPosition>0.00</commonPosition>
+				</positions>
+				<positions axis="Chi" unit="deg">
+					<commonPosition>-0.28</commonPosition>
+				</positions>
+				<positions axis="X" unit="mm">
+					<commonPosition>0.00</commonPosition>
+				</positions>
+				<positions axis="Y" unit="mm">
+					<commonPosition>0.00</commonPosition>
+				</positions>
+				<positions axis="Z" unit="mm">
+					<commonPosition>9.420</commonPosition>
+				</positions>
+				<beamAttenuationFactors>165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 165.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00</beamAttenuationFactors>
+				<commonCountingTime unit="seconds">2.00</commonCountingTime>
+				<intensities unit="counts">3436620 3614655 3749790 3859515 3917760 4077480 4152720 4308150 4426125 4527765 4612245 4743255 4837140 4906770 5069460 5151630 5221095 5259870 5387745 5468595 5550930 5668410 5789520 5814600 5925480 6000225 6019200 6087345 6202845 6286500 6401340 6406950 6419985 6547530 6619635 6633330 6692070 6758235 6815820 6815655 6881655 6944025 6955410 7002270 7054575 6989730 7120410 7181130 7129485 7081800 7167600 7217265 7236900 7234920 7180305 7231125 7273200 7184595 7205880 7102260 7092855 7132620 7049790 7018935 6883140 6858720 6774570 6653130 6500340 6277095 6101700 5864100 5561985 5175060 4770810 4270695 3815790 3252480 2784705 2462130 2279475 2196645 2152920 2096490 1981485 1827705 1605120 1358445 1114740 879120 708840 611985 555885 580470 606705 664290 755205 778800 821370 820380 797445 732930 669735 566280 495000 409035 335470 265052 212873 179991 166474 170298 187947 216037 247518 279871 307674 329712 343205 345841 339751 325054 301175 273388 240103 205479 171138 140034 112122 88985 73224 63758 59218 60967 67242 76275 88096 100220 112455 123764 132023 138028 140143 140061 135850 128637 120375 108832 96579 84214 71023 59337 48642 40045 33152 28215 25623 24867 26024 28471 32069 36230 41568 46259 50196 53719 56626 58399 58695 57557 55806 53223 50255 46061 41419 36600 31824 27343 23151 19378 16260 14098 12222 11286 11012 11664 12210 13698 15320 17231 19378 20549 22409 23642 24649 25346 25684 25701 24752 23732 22217 20544 18785 16966 14977 12860 10944 9197 7791 6520 5589 4828 4597 4588 4899 5366 6002 7039 7982 8984 9801 10731 11716 12304 12617 13057 13128 12745 12470 11692 10785 9845 8945 7760 6692 5497 4429 3635 2848 2283 1777 1567 1634 1741 1995 2493 3103 3796 4505 5118 5861 6585 7049 7465 7866 8077 7913 7601 7492 6983 6241 5627 4810 4084 3239 2585 1888 1399 922 612 479 397 571 818 1114 1577 2015 2636 3264 3699 4235 4664 5020 5371 5455 5486 5398 5129 4725 4372 3994 3378 2773 2275 1771 1180 755 504 251 130 115 176 379 661 985 1427 1754 2368 2806 3021 3530 3751 3902 3920 3992 3975 3734 3469 3336 2836 2495 2111 1713 1209 895 561 303 128 56 42 110 244 458 798 1092 1362 1670 2027 2316 2553</intensities>
+			</dataPoints>
+		</scan>
+	</xrdMeasurement>
+</xrdMeasurements>
