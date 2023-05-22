@@ -9,7 +9,7 @@ import lmfit
 import xrayutilities as xu
 
 # or using the more flexible function
-sample="XRR_Ru30nmv5_S"
+sample="XRR_Step_"
 om, tt, psd = xu.io.getxrdml_scan(sample + '%d.xrdml', 'tt', scannrs=[1,2,3], 
                                  path='.\data')
 #tt,psd,om = tt[om<4.25],psd[om<4.25],om[om<4.25]
