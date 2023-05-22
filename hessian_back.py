@@ -6,7 +6,7 @@ import numpy as np
     #om - omega values
     #tt - 2theta values
     #psd- XRR intensity
-sample="./data/XRR_Ru30nmv5_S"
+sample="./data/XRR_Step_"
 om, tt, psd = xu.io.getxrdml_scan(sample + '%d.xrdml', 'tt', scannrs=[1, 2, 3],
                                  )
 om, tt, psd = om[om<5.5], tt[om<5.5], psd[om<5.5]
