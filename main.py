@@ -36,7 +36,7 @@ hessian=hess.calc_hessian(fitted_parameters)
 covariation = (hessian)**-1
 
 #plot the table of the trust intervals
-delta = np.diagonal(covariation)**0.5
+delta = 2*np.diagonal(covariation)**0.5
 fig2 = plt.figure(figsize=(8, 6))
 ax2 = fig2.add_subplot(111)
 fig2.patch.set_visible(False)
